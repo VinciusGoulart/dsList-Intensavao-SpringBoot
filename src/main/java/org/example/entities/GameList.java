@@ -11,22 +11,23 @@ public class GameList implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String name;
 
-    public GameList(){}
+    public GameList() {
+    }
 
     public GameList(Long id, String name) {
-        Id = id;
+        id = id;
         this.name = name;
     }
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        id = id;
     }
 
     public String getName() {
